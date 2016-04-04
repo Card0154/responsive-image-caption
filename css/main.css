@@ -11,7 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
 
-  font: normal 100%/1.3 "Denk One", Georgia, serif;
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
@@ -20,4 +20,76 @@ html {
 
 body {
   margin: 0;
+}
+
+.wrapper {
+  background-color: #e2e2e2;
+  padding-bottom: 1rem;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.body-text {
+  margin: 1rem;
+}
+
+section h2 {
+  font-family: "Denk One", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .img-flex {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    padding: 0;
+    background-color: #fff;
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .body-text {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 0.5em 0.5em 0.5em 1em;
+    border-radius: 8px;
+    position: absolute;
+    width: 50.5%;
+    bottom: 54%;
+    right: 1%;
+  }
+
+   .body-text h2, p {
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+
+
+}
+
+@media only screen and (min-width: 90em) {
+
+
+
 }
